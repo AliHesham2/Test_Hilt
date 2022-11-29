@@ -12,6 +12,8 @@ import com.xontel.testhiltjava.databinding.ActivityMain2Binding;
 import com.xontel.testhiltjava.testclasses.Buffalo;
 import com.xontel.testhiltjava.testclasses.Chicken;
 import com.xontel.testhiltjava.testclasses.River;
+import com.xontel.testhiltjava.testclasses.WillBeCalled;
+import com.xontel.testhiltjava.testclasses.WillBeChecked;
 
 import javax.inject.Inject;
 
@@ -31,6 +33,7 @@ public class MainActivity2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this,R.layout.activity_main2);
+        new WillBeChecked();
        // Log.i("TAG", "RiverInstance2: "+river);
        // Log.i("TAG", "BuffaloInstance2: "+buffalo);
         Log.i("TAG", "ChickenInstance2: "+chicken);
